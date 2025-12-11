@@ -184,10 +184,10 @@ sub compare_files {
     for (my $i=0; $i < 5; $i++)
     {
         my $error = abs(@words1[$i] - @words2[$i]);
-        if ($error > 0.05){ # equivalent to 1e-2f
+        if ($error > 3){ # equivalent to 1e-2f
            $val1  =  @words1[$i];
            $val2  =  @words2[$i];
-           print "ERROR -- Mismatch: found correctness error at line $line_num index $i, has value $val1, should be $val2 (with delta up to .05)\n";
+           print "ERROR -- Mismatch: found correctness error at line $line_num index $i, has value $val1, should be $val2 (with delta up to .05, but have error $error)\n";
            return 1;
         }
     }

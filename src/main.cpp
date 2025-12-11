@@ -23,8 +23,8 @@ struct StartupOptions
 {
     int numIterations = 1;
     int numParticles = 5;
-    float viewportRadius = 10.0f;
-    float spaceSize = 10.0f;
+    float viewportRadius = 1000.0f;
+    float spaceSize = 1000.0f;
     FrameOutputStyle frameOutputStyle = FrameOutputStyle::FinalFrameOnly;
     std::string outputFile = "out.txt";
     std::string bitmapOutputDir;

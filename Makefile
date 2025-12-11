@@ -13,7 +13,7 @@ else
 CFLAGS += -O2 -fopenmp
 endif
 
-SOURCES := src/*.cpp
+SOURCES := src/*.cpp src/nbody.cu
 HEADERS := src/*.h
 
 TARGETBIN := nbody-$(CONFIGURATION)
@@ -24,7 +24,8 @@ TARGETBIN := nbody-$(CONFIGURATION)
 all: $(TARGETBIN)
 
 $(TARGETBIN): $(SOURCES) $(HEADERS)
-	$(CXX) -o $@ $(CFLAGS) $(SOURCES) 
+# 	$(CXX) -o $@ $(CFLAGS) $(SOURCES) 
+	nvcc -std=c++11 -O2 -Xcompiler -fopenmp -o $@ $(SOURCES)
 
 clean:
 	rm -rf ./nbody-$(CONFIGURATION)
