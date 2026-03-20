@@ -1,3 +1,7 @@
 # Assignment 3: Fast N-Body Simulation
 
 In this assignment, we will implement an approximate N-Body simulation and parallelize it on Xeon-Phi. In physics and astronomy, an N-body simulation is a simulation of a dynamical system of particles, usually under the influence of physical forces, such as gravity (see n-body problem).
+
+Analysis: 
+<img width="497" height="372" alt="截圖 2026-03-21 上午2 09 53" src="https://github.com/user-attachments/assets/5e700acf-3436-4b30-94d7-e97d9a54f57a" />
+
