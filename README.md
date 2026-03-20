@@ -4,7 +4,6 @@ In this assignment, we will implement an approximate N-Body simulation and paral
 
 Analysis: 
 
+<img width="934" height="698" alt="image" src="https://github.com/user-attachments/assets/2bb0700c-6268-4f3b-ac5b-ce379ae4f5b2" />
 
-
-<img width="497" height="372" alt="截圖 2026-03-21 上午2 09 53" src="https://github.com/user-attachments/assets/5e700acf-3436-4b30-94d7-e97d9a54f57a" />
 
